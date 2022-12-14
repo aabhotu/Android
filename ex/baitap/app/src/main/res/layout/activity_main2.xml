@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <Button
+        android:id="@+id/delta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Tinh delta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nghiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Tinh nghiem"
+        app:layout_constraintEnd_toEndOf="@+id/delta"
+        app:layout_constraintStart_toStartOf="@+id/delta"
+        app:layout_constraintTop_toBottomOf="@+id/delta" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="237dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="70dp"
+        android:text="Ket qua"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/nghiem"
+        app:layout_constraintStart_toStartOf="@+id/nghiem"
+        app:layout_constraintTop_toBottomOf="@+id/nghiem" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

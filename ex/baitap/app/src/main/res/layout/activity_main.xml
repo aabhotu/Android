@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Nhap so a"
+        android:inputType="textPersonName"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toEndOf="@+id/txtA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtB"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Nhap so b"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtA"
+        app:layout_constraintStart_toStartOf="@+id/edtA"
+        app:layout_constraintTop_toBottomOf="@+id/edtA" />
+
+    <EditText
+        android:id="@+id/edtC"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Nhap so c"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtB"
+        app:layout_constraintStart_toStartOf="@+id/edtB"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <TextView
+        android:id="@+id/txtA"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Nhap a:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtB"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:text="Nhap b:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtA"
+        app:layout_constraintStart_toStartOf="@+id/txtA"
+        app:layout_constraintTop_toBottomOf="@+id/txtA" />
+
+    <TextView
+        android:id="@+id/txtC"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:text="Nhap c:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtB"
+        app:layout_constraintStart_toStartOf="@+id/txtB"
+        app:layout_constraintTop_toBottomOf="@+id/txtB" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="138dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtC">
+
+
+        <RadioButton
+            android:id="@+id/ptb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giai ptb2"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/sapXep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sap xep"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tim kiem"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/tinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tinh toan"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Thuc hien"
+        app:layout_constraintEnd_toStartOf="@+id/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Ket thuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/run"
+        app:layout_constraintStart_toStartOf="@+id/run"
+        app:layout_constraintTop_toBottomOf="@+id/run" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
